@@ -1,0 +1,114 @@
+﻿<Window x:Class="imigrationdepartment.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:imigrationdepartment"
+        mc:Ignorable="d"
+        Title="Window1" Height="550" Width="744" ResizeMode="CanResizeWithGrip"
+        Background="Transparent">
+
+    <Grid>
+        <Grid RenderTransformOrigin="0.503,0.422">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="130*"/>
+                <RowDefinition Height="83*"/>
+                <RowDefinition Height="177*"/>
+                <RowDefinition Height="129*"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Background="#0F0F2D" Margin="0,0,0,104" Grid.ColumnSpan="2" />
+
+            <StackPanel Grid.Row="1">
+
+
+            </StackPanel>
+
+
+            <StackPanel Grid.Row="2">
+                <Canvas>
+                    <Image Source="photo/r.jpg" Height="428" Canvas.Left="-147" Width="1073" Canvas.Top="-126" RenderTransformOrigin="0.5,0.693">
+                        <Image.Effect>
+                            <BlurEffect Radius="10"/>
+                        </Image.Effect>
+                    </Image>
+                </Canvas>
+                <Canvas>
+                    <TextBox FontFamily="Helvetica"
+                         FontWeight="Bold"
+                         Text="Username"
+                         FontSize="40"
+                         HorizontalAlignment="Center"
+                         Foreground="white"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Width="235"
+                         HorizontalContentAlignment="Left"
+                         Opacity="0.5" Canvas.Left="288" Canvas.Top="-6"/>
+                </Canvas>
+                <Canvas>
+                    <Image Source="photo/user.png" Width="50" Canvas.Left="190" Canvas.Top="-6" RenderTransformOrigin="0.96,0.54"/>
+                    <Border Width="434"
+                            Height="4"
+                            Background="White"
+                            Opacity="0.5" RenderTransformOrigin="0.976,0.82" Canvas.Left="190" Canvas.Top="129"/>
+                </Canvas>
+
+            </StackPanel>
+            <StackPanel Grid.Row="2">
+                <StackPanel Height="20" RenderTransformOrigin="0.5,0.5" >
+
+                    <Canvas>
+                        <Image Source="photo/2.jpg" Canvas.Left="-8" Canvas.Top="-180" Height="129" Width="759"/>
+                        <PasswordBox FontFamily="Helvetica"
+                         FontWeight="Bold"
+                         Password="Password"
+                         FontSize="40"
+                         HorizontalAlignment="Center"
+                         Foreground="white"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Width="235"
+                         HorizontalContentAlignment="Left"
+                         Opacity="0.5" Canvas.Left="280" Canvas.Top="72"
+                             />
+
+                        <Image Source="photo/lock.png" Width="50" Canvas.Left="192" Canvas.Top="72" RenderTransformOrigin="0.32,0.66"/>
+
+
+                        <Border Width="434"
+                            Height="4"
+                            Background="White"
+                            Opacity="0.5" RenderTransformOrigin="0.976,0.82" Canvas.Left="192" Canvas.Top="55"/>
+                    </Canvas>
+
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                <Canvas>
+                    <Button Width="218" Height="33" Content="LOGIN" Canvas.Left="280" Canvas.Top="434" Click="Button_Click"/>
+                </Canvas>
+
+            </StackPanel>
+
+        </Grid>
+        <Grid Grid.Column="1"
+              Grid.RowSpan="2"
+              Margin="56,-425,-506,115"
+              Panel.ZIndex="-1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="239*"/>
+                <RowDefinition Height="590*"/>
+            </Grid.RowDefinitions>
+
+
+
+        </Grid>
+
+    </Grid>
+</Window>

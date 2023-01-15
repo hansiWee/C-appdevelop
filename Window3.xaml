@@ -1,0 +1,196 @@
+﻿<Window x:Class="imigrationdepartment.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:imigrationdepartment"
+        mc:Ignorable="d"
+        Title="Window3" Height="549" Width="1212"
+        Background="Transparent"
+        >
+    <Border Background="#181760"
+            CornerRadius="20" Margin="0,0,2,12">
+
+        <Grid Margin="0,0,0,51">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="130"/>
+                <ColumnDefinition Width="229*"/>
+                <ColumnDefinition Width="152*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition/>
+
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Horizontal"
+                        Background="Transparent">
+
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="0,0,0,-33">
+
+                <StackPanel.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#181767" Offset="0.0"/>
+                        <GradientStop Color="#844eff" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+
+
+                <Button Content="Menu"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="24"
+                        Background="Transparent"
+                        Margin="10,40,0,0" Click="Button_Click"/>
+                <Button Content="Log out"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="24"
+                        Background="Transparent"
+                        Margin="10,10,0,0" Click="Button_Click_1"/>
+                <Button Content="Exit"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="24"
+                        Background="Transparent"
+                        Margin="10,10,0,0" Click="Button_Click_5"/>
+                <Canvas>
+                    <Image Source="photo/Add a heading (1).JPG" Width="122" Canvas.Left="3" Canvas.Top="-23" Height="247"/>
+                </Canvas>
+
+
+
+            </StackPanel>
+            <StackPanel
+                Orientation="Horizontal"
+                Grid.Column="1" Margin="0,0,0,10" Grid.ColumnSpan="2">
+                <Canvas>
+                    <Canvas/>
+                    <Border Width="476"
+                        Height="222" Canvas.Left="51" Canvas.Top="33">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#1bc3ff" Offset="0.0"/>
+                                <GradientStop Color="#845eff" Offset="1"/>
+
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Border.Clip>
+                            <RectangleGeometry RadiusX="10"
+                                           RadiusY="10"
+                                           Rect="0,0,700,200"/>
+                        </Border.Clip>
+                        <Grid>
+                            <Canvas>
+                                <StackPanel Margin="10,10,-10,-10">
+                                    <TextBlock Text="Applicatio Form"
+                                       Foreground="White"
+                                       FontSize="40"
+                                       Margin="20,10,10,0" Width="389"/>
+                                    <Canvas>
+                                        <Image Source="/photo/resume.png" Height="140" Width="231" Canvas.Left="289" Canvas.Top="-26" RenderTransformOrigin="0.417,-0.059"/>
+                                    </Canvas>
+
+                                </StackPanel>
+                            </Canvas>
+                        </Grid>
+
+
+                    </Border>
+                </Canvas>
+
+                <Canvas>
+                    <Border Width="484"
+                        Height="214" Canvas.Top="130" RenderTransformOrigin="1.546,-0.484" Canvas.Left="563">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                                <GradientStop Color="#844eff" Offset="1"/>
+
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Border.Clip>
+                            <RectangleGeometry RadiusX="10"
+                                           RadiusY="10"
+                                           Rect="0,0,700,200"/>
+                        </Border.Clip>
+                        <Grid Margin="0,0,-78,-96">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="158*"/>
+                                <ColumnDefinition Width="17*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Margin="-77,72,43,-72">
+                                <Canvas>
+                                    <TextBlock Text="File Attachment"
+                                       Foreground="White"
+                                       FontSize="40" Height="142" RenderTransformOrigin="0.5,0.5" Canvas.Left="112" Canvas.Top="-53">
+
+                                        <TextBlock.RenderTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform/>
+                                                <SkewTransform/>
+                                                <RotateTransform Angle="-1.59"/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </TextBlock.RenderTransform>
+                                    </TextBlock>
+                                </Canvas>
+                                <Canvas>
+                                    <Image Source="/photo/file.png" Height="154" Width="254" Canvas.Left="361" Canvas.Top="-47"/>
+                                </Canvas>
+
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </Canvas>
+                <Canvas>
+                    <Border Width="476"
+                        Height="214" Canvas.Top="275" RenderTransformOrigin="1.546,-0.484" Canvas.Left="51">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                                <GradientStop Color="#844eff" Offset="1"/>
+
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Border.Clip>
+                            <RectangleGeometry RadiusX="10"
+                                           RadiusY="10"
+                                           Rect="0,0,800,200"/>
+                        </Border.Clip>
+                        <Grid>
+                            <StackPanel Margin="10,0,-28,10">
+                                <Canvas>
+                                    <TextBlock Text="PAYMENT"
+                                       Foreground="White"
+                                       FontSize="40"
+                                       Height="63" Canvas.Left="48" Canvas.Top="11" Width="340"/>
+
+                                    <Image Source="/photo/debit-card.png" Height="130" Width="296" Canvas.Left="244" Canvas.Top="74" RenderTransformOrigin="0.53,1.114"/>
+                                </Canvas>
+
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </Canvas>
+                <Canvas>
+                    <Button Content="click here" Canvas.Left="261" Canvas.Top="156" Height="27" Width="86" Click="Button_Click_3"/>
+                </Canvas>
+                <Canvas>
+                    <Button Content="click here" Canvas.Left="762" Canvas.Top="235" Height="27" Width="86" Click="Button_Click_2"/>
+                </Canvas>
+                <Canvas>
+                    <Button Content="click here" Canvas.Left="270" Canvas.Top="409" Height="27" Width="86" Click="Button_Click_4"/>
+                </Canvas>
+
+
+
+            </StackPanel>
+
+        </Grid>
+    </Border>
+
+</Window>
